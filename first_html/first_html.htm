@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>牧雲軒</title>
+  </head>
+  <body>
+    <h1>人工智能</h1>
+    <p>
+      <ul>
+        <li>正常字体 <br></li>
+        <li><strong>重中之重<br></strong></li>
+        <li><em>强中之强</em> </li>
+        <li><strong>重中之<em>强</em></strong> <br></li>
+        <li><em>强中之<strong>重</strong></em> <br></li>
+        <li>苹果 &gt; 香蕉 </li>
+        <li>桔子 &lt; 榴莲 </li>
+        <li><em>&amp;nbsp</em>&nbsp;表示空格</li>
+      </ul>
+      <video  id = "vidio0" width="320" height="240" controls="controls">
+        <source src="movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </p>
+    <p>
+      <a href="https://www.baidu.com/">百度一下,你就知道</a>
+    </p>
+    <p>
+      <div style="text-align:center;">
+        <button onclick="playPause()">播放/暂停</button>
+        <button type="button" name="button" onclick="makeBig()">大</button>
+        <button onclick="makeNormal()">中</button>
+        <button onclick = "makeSmall()" >小</button>
+        <br />
+        <video id="video1" width = "420" style="margin-top:15px;" src="mov_bbb.mp4" autoplay>
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+
+      <script type="text/javascript">
+      var myVideo=document.getElementById("video1");
+      function playPause()
+      {
+      if (myVideo.paused)
+        myVideo.play();
+      else
+        myVideo.pause();
+      }
+
+      function makeBig()
+      {
+      myVideo.width=560;
+      }
+
+      function makeSmall()
+      {
+      myVideo.width=320;
+      }
+
+      function makeNormal()
+      {
+      myVideo.width=420;
+      }
+      </script>
+
+    </p>
+  </body>
+</html>
