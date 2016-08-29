@@ -8,15 +8,45 @@
     <h1>人工智能</h1>
     <p>
       <ul>
-        <li>正常字体 <br></li>
+        <h2>无序列表</h2>
+        <li>正常字体 </li>
+        <li><b>粗体</b></li>
+        <li><i>斜体</i></li>
+        <li>small <small>small <small>small</small></small></li>
+        <li>big <big>big <big>big</big></big> </li>
+        <li><s>划掉</s></li>
+        <li><u>下划线</u></li>
+        <li><mark>高亮</mark></li>
+        <li><cite>定义引用citation</cite></li>
         <li><strong>重中之重<br></strong></li>
         <li><em>强中之强</em> </li>
-        <li><strong>重中之<em>强</em></strong> <br></li>
-        <li><em>强中之<strong>重</strong></em> <br></li>
+        <li><strong>重中之<em>强</em></strong> </li>
+        <li><em>强中之<strong>重</strong></em> </li>
+        <li><acronym title="World Wide Web">WWW</acronym></li>
+        <li>The <abbr title="People's Republic of China">PRC</abbr> was founded in 1949.</li>
         <li>苹果 &gt; 香蕉 </li>
         <li>桔子 &lt; 榴莲 </li>
         <li><em>&amp;nbsp</em>&nbsp;表示空格</li>
+        <li>br表示回车 <br>换行</li>
       </ul>
+      <ol>
+        <h2>有序列表</h2>
+        <li>打开冰箱门</li>
+        <li>把大象放进去</li>
+        <li>关上冰箱门</li>
+      </ol>
+      <ol>
+        <h2>中文数字</h2>
+        <li>一.巴塞罗那</li>
+        <li>二.皇家马德里</li>
+      </ol>
+      <dl class="">
+        <dt>巴塞罗那</dt>
+        <dd>不只是一家足球俱乐部。</dd>
+        <dt>梅西</dt>
+        <dd>阿根廷人，巴塞罗那的当家球星，世界最佳足球巨星。</dd>
+
+      </dl>
       <video  id = "vidio0" width="320" height="240" controls="controls">
         <source src="movie.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -64,13 +94,14 @@
     </p>
 
     <p>
-      <audio src="齐晨-咱们结婚吧.mp3" controls="controls" autoplay="autoplay" loop="loop">
+      <!-- <audio src="齐晨-咱们结婚吧.mp3" controls="controls" autoplay="autoplay" loop="loop">
       Your browser does not support the audio element.
-      </audio>
+      </audio> -->
     </p>
 
     <p>
-      <img src="但行好事.png" id="drag1" draggable = "true" ondragstart = "drag(event)" width = "728" height="84" alt="" />
+      <!-- 拖拽 -->
+      <!-- <img src="但行好事.png" id="drag1" draggable = "true" ondragstart = "drag(event)" width = "728" height="84" alt="" />
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
       <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
@@ -94,13 +125,47 @@
         var data = ev.dataTransfer.getData("Text");
         ev.target.appendChild(document.getElementById(data));
       }
-      </script>
+      </script> -->
     </p>
-
-
-
-
-
+    <hr>
+    <p>
+      <!-- 八卦图 -->
+      <p>
+        &#9777; &#9776; &#9780;
+      </p>
+      <p>
+        &#9778; &#9775; &#9781;
+      </p>
+      <p>
+        &#9779; &#9783; &#9782;
+      </p>
+    </p>
+    <p>
+      孔子曰：
+      <blockquote>
+        三人行必有我师。
+      </blockquote>
+      请注意，浏览器在 blockquote 元素前后添加了换行，并增加了外边距。
+    </p>
+    <pre>
+      天下大势，分久必合，合久必分。
+                            ——《三国演义》
+    </pre>
+    <p>
+      天下大势，分久必合，合久必分。
+                            ——《三国演义》
+    </p>
+    <p>
+      <address>
+        Written by <a href="mailto:lionel_jing@163.com">Jerry Jing</a>.<br>
+        Visit us at:<br>
+        shanghai China
+      </address>
+    </p>
+    <code>#define WWW world</code> <br>
+    10<sup>2</sup>=100 <br>
+    f(<var>x</var>,<var>n</var>) = log<sub>4</sub><var>x</var><sup><var>n</var></sup> <br>
+    <ruby>咏<rt>yǒng</rt> 鹅<rt>é</rt></ruby> <br>
 
 
   </body>
