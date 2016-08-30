@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>forms</title>
+  </head>
+  <body>
+    <form class="" action="mailto:jingr-1@163.com;jingr1@126.com?cc=lionel_jing@163.com&bcc=jingr1@163.com&subject=register" method="post">
+    <h1>用户注册</h1>
+    <table border="1">
+      <tr>
+        <td>
+          用户名
+        </td>
+        <td>
+          <input type="text" name="username" value="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          密码
+        </td>
+        <td>
+          <input type="text" name="password" value="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          再次输入密码
+        </td>
+        <td>
+          <input type="text" name="passward2" value="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          出生年月
+        </td>
+        <td>
+          <input type="date" name="birthday" value="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          年龄
+        </td>
+        <td>
+          <input type="number" name="age" min="1" max="100" value="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          性别
+        </td>
+        <td>
+          <input type="radio" name="sex" value="male" checked>男
+          <input type="radio" name="sex" value="female">女
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          兴趣爱好
+        </td>
+        <td>
+          <input type="checkbox" name="football" value="">足球
+          <input type="checkbox" name="crosstalk" value="">相声
+        </td>
+      </tr>
+      <tr>
+        <td>
+          透明度
+        </td>
+        <td>
+          <input type="range" name="transparency" value="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          毕业院校
+        </td>
+        <td>
+          <select class="" name="university" required>
+            <option value=""> Select university</option>
+            <option value="1" selected>内蒙古工业大学</option>
+            <option value="2">吉林大学</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          气温
+        </td>
+        <td>
+          <meter min="-40" max="40" value="25">25度</meter>
+        </td>
+      </tr>
+    </table>
+    <input type="submit" name="register" value="注册">
+    </form>
+
+  </body>
+</html>
