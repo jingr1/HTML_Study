@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>map</title>
+  </head>
+  <body>
+    <table border="0" cellspacing="0" cellpadding="0">
+      <th>
+        <font size="5" face="Verdana">
+          点击星球看大图。
+        </font>
+      </th>
+      <tr>
+        <td>
+          <img
+          src="eg_planets.jpg"
+          border="0" usemap="#planetmap"
+          alt="Planets" />
+        </td>
+        <td>
+          <iframe src="eg_planets.jpg" seamless name="planet" width="215" height="260"></iframe>
+        </td>
+      </tr>
+    </table>
+
+
+  <map name="planetmap" id="planetmap">
+
+  <area
+  shape="circle"
+  coords="180,139,14"
+  href ="eg_venus.gif"
+  target ="planet"
+  alt="Venus"
+  width="100%" height="100%"/>
+
+  <area
+  shape="circle"
+  coords="129,161,10"
+  href ="eg_merglobe.gif"
+  target ="planet"
+  alt="Mercury" />
+
+  <area
+  shape="rect"
+  coords="0,0,110,260"
+  href ="eg_sun.gif"
+  target ="planet"
+  alt="Sun" />
+
+  </map>
+
+  </body>
+</html>

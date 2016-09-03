@@ -62,6 +62,9 @@
         <button onclick="makeNormal()">中</button>
         <button onclick = "makeSmall()" >小</button>
         <br />
+        <button  onclick="FastFoward1()">>></button>
+        <button  onclick="SlowFoward1()"><<</button>
+        <br>
         <video id="video1" width = "420" style="margin-top:15px;" src="mov_bbb.mp4">
           Your browser does not support HTML5 video.
         </video>
@@ -90,13 +93,41 @@
       {
       myVideo.width=420;
       }
+      function FastFoward1()
+      {
+        alert(myVideo.playbackRate);
+        myVideo.playbackRate = 2;
+      }
+      function SlowFoward1()
+      {
+        myVideo.playbackRate = 0.5;
+      }
       </script>
     </p>
 
     <p>
-      <!-- <audio src="齐晨-咱们结婚吧.mp3" controls="controls" autoplay="autoplay" loop="loop">
+      <audio id="myaudio"src="齐晨-咱们结婚吧.mp3" controls="controls" autoplay="autoplay" loop="loop">
       Your browser does not support the audio element.
-      </audio> -->
+      </audio>
+      <button  onclick="FastFoward()">Fast</button>
+      <button  onclick="SlowFoward()">Slow</button>
+      <button  onclick="SetCurTime()">Time</button>
+      <br>
+      <script type="text/javascript">
+      function FastFoward()
+      {
+        myaudio.playbackRate = 2*myaudio.playbackRate;
+      }
+      function SlowFoward()
+      {
+        myaudio.playbackRate = 0.5*myaudio.playbackRate;
+      }
+      function SetCurTime()
+      {
+        alert(myaudio.currentTime);
+        myaudio.currentTime = 10;
+      }
+      </script>
     </p>
 
     <p>
@@ -166,7 +197,5 @@
     10<sup>2</sup>=100 <br>
     f(<var>x</var>,<var>n</var>) = log<sub>4</sub><var>x</var><sup><var>n</var></sup> <br>
     <ruby>咏<rt>yǒng</rt> 鹅<rt>é</rt></ruby> <br>
-
-
   </body>
 </html>

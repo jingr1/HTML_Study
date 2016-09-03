@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>table</title>
+    <style type="text/css">
+      thead {color:green;background: white;}
+      tbody {color:blue;height:50px}
+      tfoot {color:red}
+      body {background: black}
+    </style>
+  </head>
+  <body style="background-image:url(background.jpg); background-repeat: repeat;background-attachment: fixed;margin: 5px">
+    <p >
+      <!-- <table>
+        <tr>
+          <td style = "background-image:url(春.jpg); ">
+            春眠不觉晓，<br>
+            处处闻啼鸟；<br>
+            夜来风雨声，<br>
+            花落知多少。<br>
+          </td>
+        </tr>
+      </table> -->
+    </p>
+    <table border="1">
+      <caption>school auction sign-up sheet</caption>
+      <thead>
+      <tr>
+        <th>
+        <label for="e1">Name</label>
+        </th>
+        <th>
+          <label for="e2">Product</label>
+        </th>
+        <th>
+          <label for="e3">Picture</label>
+        </th>
+        <th>
+          <label for="e4">Price</label>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Your name here
+        </td>
+        <td>
+          What are you selling?
+        </td>
+        <td>
+          Link to a picture
+        </td>
+        <td>
+          Your reserve price
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Mr King
+        </td>
+        <td>
+          Doughnuts
+        </td>
+        <td>
+          <img src="doughnut.jpg" heaght="30" width="30" alt="doughnut" />
+        </td>
+        <td>
+          $100
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" id="e1" name="who required" form="f">
+        </td>
+        <td>
+          <input type="text" id="e2" name="what required" form="f">
+        </td>
+        <td>
+          <input type="url" id="e3" name="pic" form="f">
+        </td>
+        <td>
+          <input type="number" step=0.01 min=0 value=0 required id="e4" name="price" form="f">
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td>
+        note: the picture must in 30x30.
+      </td>
+    </tfoot>
+    </table>
+    <form id=f action="/auction.cgi" method="post">
+      <input type="button" name="add" value="Submit">
+    </form>
+
+    <table border="1">
+      <tr>
+        <td width="50">Name</td>
+        <td width="50">Jerry</td>
+        <td width="50"> sex</td>
+        <td width="50"> male</td>
+        <td width="100" rowspan="2"><img src="doughnut.jpg" heaght="100%" width="100%" alt="doughnut" /></td>
+      </tr>
+      <tr>
+        <td> countr</td>
+        <td> china</td>
+        <td> city</td>
+        <td> shanghai</td>
+      </tr>
+      <tr>
+        <td rowspan="2">hobby</td>
+        <td colspan="4">footble</td>
+      </tr>
+      <tr>
+        <td colspan="4">crosstalk</td>
+      </tr>
+    </table>
+
+  </body>
+</html>
