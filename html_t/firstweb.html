@@ -2,9 +2,90 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>myweb</title>
+    <title>mooyun makerspace</title>
+    <!--布局，用div来占块，用css控制显示-->
+
+    <!-- 每个页面需要继承并添加的样式 start-->
+    <!-- <link type="text/css" rel="stylesheet" href="main.css"> -->
+    <style media="screen" type="text/css">
+    .common-header a.logo-href {
+    display: block;
+    width: 215px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    }
+    .common-header{
+        background: url(mooyoo-logo.png) 14px 42px no-repeat;
+        color: #fff;
+        font-size: 14px;
+        position: absolute;
+        top: 0px;
+        padding-left: 278px;
+        height: 120px;
+        left: 50%;
+        margin-left: -501px;
+    }
+    .common-header li {
+        float: left;
+        padding: 0 30px;
+        height: 120px;
+        line-height: 120px;
+    }
+    .common-header ul{list-style: none}
+
+      #container{width: 1000px; background: #fff; margin:auto}
+      #main{height: 200px;background: red; margin-top: 120px;}
+      #left{height: 800px; width: 80%; background: green; float: left;}
+      #right{height: 790px; width: 19%; background: black; float: right;border: 5px dashed green}
+      #footer{height: 120px;width: 100%;background: orange;clear: both}
+      .mainleft{height: 360px;width: 360px; margin: 20px;background: blue;float: left}
+      #trip {width:0px;height: 0px;
+        border-top: 50px solid rgba(200,200,200,0.5);
+        border-left: 50px solid black;
+        border-right: 50px solid purple;
+        border-bottom: 50px solid orange}
+      .pad{padding: 50px}
+      #sp{color: red;margin-left: 20px}
+    </style>
   </head>
   <body>
+    <div class="white-bg" id="container">
+      <div class="common-header">
+          <a class="logo-href" href="http://www.mooyoo.com.cn"></a>
+           <ul class="clearfix">
+               <li class="no-border"><a class="index" href="#">首页</a></li>
+               <li><a class="about" href="#sec-2">关于牧雲軒</a></li>
+               <li><a class="active" href="#sec-2">牧雲軒动态</a></li>
+               <li><a class="contact" href="#concat-us">联系我们</a></li>
+               <li><a class="join" target="_blank" href="http://www.lagou.com/gongsi/6580.html">加入我们</a></li>
+               <li><a class="other" target="_blank" href="http://meijiabang.cn/">产品介绍</a></li>
+           </ul>
+      </div>
+      <div class="" id="main">
+        <p class="line"></p>
 
+      </div>
+      <div class=""id="left">
+        <div class="mainleft">
+          <div class="trip" id="trip">
+          </div>
+        </div>
+        <div class="mainleft">
+          <div class="pad">
+            文字的距离padding<span id="sp">我是span</span>
+          </div>
+        </div>
+        <div class="mainleft">c</div>
+        <div class="mainleft">d</div>
+      </div>
+      <div class="" id="right">
+
+      </div>
+      <div class="" id="footer">
+
+      </div>
+    </div>
   </body>
 </html>
